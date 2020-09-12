@@ -1,14 +1,26 @@
 #### Installation
-
   ```sh
     - Clone the source code.
-    $ cd FP_ONE
+    $ cd djbase
     - Copy .env.example and paste as .env
-    - Update environment variable in .env
+    - Update environment variable in .env if you don't want to use default value.
+  ```
+  - Without Docker
+  ```sh
     $ pip install -r requirements/base.txt
     $ python manage.py migrate
     $ python manage.py createsuperuser
     $ python manage.py runserver 0.0.0.0:8000
+  ```
+  - With Docker
+  ```sh
+    - Install Docker [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/)
+    - Install Docker Compose [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+    $ ./scripts/djabase.sh init
+    $ ./scripts/djabase.sh start
+    - In case your have some update on model fields please execute command bellow.
+    $ ./scripts/djabase.sh makemigrations
+    $ ./scripts/djabase.sh migrate
   ```
 
 #### APIs
