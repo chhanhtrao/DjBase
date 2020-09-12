@@ -18,7 +18,7 @@
     - Install Docker Compose [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
     $ ./scripts/djabase.sh init
     $ ./scripts/djabase.sh start
-    - In case your have some update on model fields please execute command bellow.
+    - If you have some update on model fields please execute command bellow.
     $ ./scripts/djabase.sh makemigrations
     $ ./scripts/djabase.sh migrate
   ```
