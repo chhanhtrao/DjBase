@@ -14,7 +14,7 @@
   ```
   - With Docker
   ```sh
-    - Install Docker https://docs.docker.com/engine/install/
+    - Install Docker (https://docs.docker.com/engine/install/)
     - Install Docker Compose https://docs.docker.com/compose/install/
     $ ./scripts/djabase.sh init
     $ ./scripts/djabase.sh start
